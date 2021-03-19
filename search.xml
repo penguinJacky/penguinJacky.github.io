@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>小程序学习笔记(1)</title>
+      <link href="2021/03/19/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/"/>
+      <url>2021/03/19/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/</url>
+      
+        <content type="html"><![CDATA[<h2 id="小程序"><a href="#小程序" class="headerlink" title="小程序"></a>小程序</h2><div class="note"><p>小程序是一种新的开放能力，开发者可以快速地开发一个小程序。微信小程序是一种全新的连接用户与服务的方式。小程序可以在微信内被便捷地获取和传播，同时具有出色的使用体验。</p></div><h2 id="小程序的开发模式"><a href="#小程序的开发模式" class="headerlink" title="小程序的开发模式"></a>小程序的开发模式</h2><h3 id="传统的开发模式"><a href="#传统的开发模式" class="headerlink" title="传统的开发模式"></a>传统的开发模式</h3><div class="img-wrap"><div class="img-bg"><img class="img lazyload placeholder" src="/2021/03/19/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/traditional.png" class="lazyload placeholder" data-srcset="/2021/03/19/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/traditional.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@3/img/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg"></div></div><h3 id="云开发模式"><a href="#云开发模式" class="headerlink" title="云开发模式"></a>云开发模式</h3><div class="note info"><p>大大地简化了后台的开发量，开发者只需要专注于业务</p></div><div class="img-wrap"><div class="img-bg"><img class="img lazyload placeholder" src="/2021/03/19/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/cloud.png" class="lazyload placeholder" data-srcset="/2021/03/19/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/cloud.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@3/img/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg"></div></div><h2 id="云开发"><a href="#云开发" class="headerlink" title="云开发"></a>云开发</h2><h3 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h3><div class="note "><ul><li><strong>快速上线</strong></li><li><strong>专注核心业务</strong>   (<span class="p gray">不需要再考虑前后端联调、后期运维等问题，大大降低了复杂性和成本</span>)</li><li><strong>独立开发一个完整的微信小程序</strong>   (<span class="p gray">只要有一个人就可以完成开发</span>)</li><li><strong>只需要掌握</strong> <code>JavaScript</code></li><li><strong>无需运维，节约成本</strong></li><li><strong>弹性伸缩</strong>   (<span class="p gray">当性能不断增加时，云开发可以弹性地去扩展性能</span>)</li><li><strong>数据安全</strong>   (<span class="p gray">每个用户的环境都是独立的，也可以说是私有的。用户的数据都是存在自己的云开发的环境下</span>)</li></ul></div><h3 id="基础能力"><a href="#基础能力" class="headerlink" title="基础能力"></a>基础能力</h3><details green open><summary> 1. 云函数 </summary>              <div class="content">              <p>在云端（服务器端）运行的代码（函数）。具有微信私有协议天然鉴权，开发者可以很方便地获取到当前登录用户的<b>openid</b></p><p><b>-&gt;openid</b>：<span class="p blue small">用户的一个唯一标识。为了识别用户，每个用户都会针对每个公众号或小程序等应用产生一个唯一的、安全的 <strong>openid</strong>，它只针对当前的公众号或小程序等应用有效</span></p><p>开发者无需购买、搭建服务器，只需要编写函数代码并部署到云端（服务器端），即可在小程序端进行调用</p><p>各云函数完全独立，云函数之间可以互相调用</p>              </div>            </details><details green open><summary> 2. 云数据库 </summary>              <div class="content">              <p>一个既可以在小程序端操作又可以在云函数中操作的 <strong>JSON数据库</strong> ，属于 <strong>NoSQL数据库</strong>，即非关系型数据库</p><p>与关系型数据库（<em>MySQL</em>、<em>Oracle</em>、<em>SQL Server</em>）是不一样的</p>              </div>            </details><details green open><summary> 3. 云存储 </summary>              <div class="content">              <p>在云端存储文件，可以在云端控制台可视化管理</p><p>对于文件的上传和下载很方便</p>              </div>            </details><details green open><summary> 4. 云调用 </summary>              <div class="content">              <p>基于云函数免鉴权使用小程序开放接口的能力</p><p>目前覆盖的使用场景：</p><ul><li>服务端调用</li><li>开放数据调用</li><li>消息推送</li></ul>              </div>            </details><details green open><summary> 5. HTTP API </summary>              <div class="content">              <p>提供了小程序外访问云开发资源的能力。使用 <strong>HTTP API</strong>，开发者可以在已有的服务器上访问云资源，实现与云开发的互通</p>              </div>            </details>]]></content>
+      
+      
+      <categories>
+          
+          <category> 小程序 </category>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 小程序 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>发布并上线文章</title>
+      <link href="2020/12/03/%E5%8F%91%E5%B8%83%E5%B9%B6%E4%B8%8A%E7%BA%BF%E6%96%87%E7%AB%A0/"/>
+      <url>2020/12/03/%E5%8F%91%E5%B8%83%E5%B9%B6%E4%B8%8A%E7%BA%BF%E6%96%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/zh-cn/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/zh-cn/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask author on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p><code>layout</code> 是文章的布局，可以在命令中指定，不指定时默认为 <code>post</code> 。可以在 <code>_config.yml</code> 里修改 <code>default_layout</code>  参数来指定默认的布局</p><p>如果 <code>title</code> 有空格，要使用引号括起来</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My new post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Clean"><a href="#Clean" class="headerlink" title="Clean"></a>Clean</h3><p>清除缓存文件 <code>db.json</code> 和已生成的静态文件 <code>public</code></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><p>输入以下命令以启动服务器，您的网站会在 <code>http://localhost:4000</code> 下启动。在此期间，Hexo会监视网站的文件是否有变动并自动更新，无需每修改一次文件就重启一次服务器</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>or</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>or</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><p>部署</p><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>or</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><p>执行上述命令时，Hexo会将 <code>public</code> 目录中的文件和目录推送至您在 <code>_config.yml</code> 中指定的远端仓库和分支中，并 <strong>完全覆盖</strong> 该分支下之前的内容</p><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><h3 id="Generate-Deploy"><a href="#Generate-Deploy" class="headerlink" title="Generate + Deploy"></a>Generate + Deploy</h3><p>让 Hexo 在生成静态文件完毕后自动部署网站</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --deploy</span><br></pre></td></tr></table></figure><p>or</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy --generate</span><br></pre></td></tr></table></figure><p>or</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure><p>or</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
